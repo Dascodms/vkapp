@@ -13,16 +13,20 @@ import './Persik.css';
 const osName = platform();
 
 const Persik = props => (
-	<Panel id={props.id}>
-		<PanelHeader
-			left={<HeaderButton onClick={props.go} data-to="home">
-				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
-			</HeaderButton>}
-		>
-			Persik
-		</PanelHeader>
-		<img className="Persik" src={persik} alt="Persik The Cat"/>
-	</Panel>
+	<div>
+		<iframe title="radio_vk"
+                width="100%"
+                height="115px"
+                scrolling="no"
+                border="0"
+                hspace="0"
+                vspace="0"
+                allowFullScreen="true"
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                src="https://weisshorn.dev.disney.ddgcorp.ru/player_widget"
+                frameBorder="no"></iframe>
+	</div>
 );
 
 Persik.propTypes = {

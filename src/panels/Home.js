@@ -26,6 +26,18 @@ const Home = ({ id, go, fetchedUser }) => (
 				<Button size="xl" level="2" onClick={go} data-to="persik">
 					Show me the Persik, please
 				</Button>
+				<iframe title="radio_vk"
+                width="100%"
+                height="115px"
+                scrolling="no"
+                border="0"
+                hspace="0"
+                vspace="0"
+                allowFullScreen="true"
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                src="https://weisshorn.dev.disney.ddgcorp.ru/player_widget"
+                frameBorder="no"></iframe>
 			</Div>
 		</Group>
 	</Panel>
