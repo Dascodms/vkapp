@@ -11,7 +11,7 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 const Home = () => (
 	<Panel>
 		<Div>
-			{/* <iframe title="radio_vk"
+			<iframe title="radio_vk"
 			width="100%"
 			height="115px"
 			scrolling="no"
@@ -22,7 +22,7 @@ const Home = () => (
 			mozallowfullscreen="true"
 			webkitallowfullscreen="true"
 			src="https://weisshorn.dev.disney.ddgcorp.ru/player_widget"
-			frameBorder="no"></iframe> */}
+			frameBorder="no"></iframe>
 		</Div>
 	</Panel>
 );
