@@ -8,38 +8,22 @@ import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 
-const Home = ({ id, go, fetchedUser }) => (
-	<Panel id={id}>
-		<PanelHeader>Example</PanelHeader>
-		{fetchedUser &&
-		<Group title="User Data Fetched with VK Connect">
-			<Cell
-				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
-				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
-			>
-				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
-			</Cell>
-		</Group>}
-
-		<Group title="Navigation Example">
-			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Show me the Persik, please
-				</Button>
-				<iframe title="radio_vk"
-                width="100%"
-                height="115px"
-                scrolling="no"
-                border="0"
-                hspace="0"
-                vspace="0"
-                allowFullScreen="true"
-                mozallowfullscreen="true"
-                webkitallowfullscreen="true"
-                src="https://weisshorn.dev.disney.ddgcorp.ru/player_widget"
-                frameBorder="no"></iframe>
-			</Div>
-		</Group>
+const Home = () => (
+	<Panel>
+		<Div>
+			{/* <iframe title="radio_vk"
+			width="100%"
+			height="115px"
+			scrolling="no"
+			border="0"
+			hspace="0"
+			vspace="0"
+			allowFullScreen="true"
+			mozallowfullscreen="true"
+			webkitallowfullscreen="true"
+			src="https://weisshorn.dev.disney.ddgcorp.ru/player_widget"
+			frameBorder="no"></iframe> */}
+		</Div>
 	</Panel>
 );
 
