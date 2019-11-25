@@ -6,30 +6,26 @@ import connect from '@vkontakte/vk-connect';
 import App from './App';
 // import registerServiceWorker from './sw';
 
-let widget = {
-    "title": "Цитата дня",
-    "title_url": "https://link",
-    "title_counter": 42,
-    "more": "Читать все цитаты",
-    "more_url": "https://link2",
-    "text": "«Нам нужно гордиться»",
-    "descr": "Дэвид Кэмерон о победе сторонников выхода страны\n из Евросоюза на референдуме",
-}
-
-
 
 
 // Init VK  Mini App
 connect.send('VKWebAppInit');
-// connect.send("VKWebAppShowCommunityWidgetPreviewBox", {"group_id": 189060637, "type": "text", "code": `return {
-//     \"title\": \"Циfgfgfgfgfgтата\",
-//     \"text\": \"Текстgfgfg цитаты\"
-// };`});
 
 connect.send("VKWebAppShowCommunityWidgetPreviewBox", {
-    group_id: 500,
-    type: "text",
-    code: 'return {"title": "Цитата", "text": "Текст цитаты"};'
-  });
+    "group_id": 189060637, 
+    "type": "cover_list", 
+    "code": `return {"title": "Радио Дисней",
+    "rows": [{
+        "title": "Радио Дисней",
+        "button": "Слушай",
+        "descr": "лалалалал",
+        "cover_id": "вот тут вопрос- надо доки читать",
+        "url": "https://vk.com/app7218370_-189060637",
+        "button_url": "https://vk.com/app7218370_-189060637"
+      }
+]};`
+});
+
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
