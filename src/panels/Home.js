@@ -11,33 +11,24 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 const Home = () => (
 	<Panel>
 		<Div>
-			<iframe title="radio_vk"
-			width="100%"
-			height="115px"
-			scrolling="no"
-			border="0"
-			hspace="0"
-			vspace="0"
-			allowFullScreen="true"
-			mozallowfullscreen="true"
-			webkitallowfullscreen="true"
-			src="https://weisshorn.dev.disney.ddgcorp.ru/player_widget"
-			frameBorder="no"></iframe>
+			<iframe 
+				title="radio_vk"
+				width="100%"
+				height="115px"
+				scrolling="no"
+				border="0"
+				hspace="0"
+				vspace="0"
+				allowFullScreen="true"
+				mozallowfullscreen="true"
+				webkitallowfullscreen="true"
+				src="https://weisshorn.dev.disney.ddgcorp.ru/player_widget"
+				frameBorder="no">
+
+			</iframe>
 		</Div>
 	</Panel>
 );
 
-Home.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
-	fetchedUser: PropTypes.shape({
-		photo_200: PropTypes.string,
-		first_name: PropTypes.string,
-		last_name: PropTypes.string,
-		city: PropTypes.shape({
-			title: PropTypes.string,
-		}),
-	}),
-};
 
 export default Home;

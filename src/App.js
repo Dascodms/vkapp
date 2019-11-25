@@ -32,10 +32,16 @@ const App = () => {
 		setActivePanel(e.currentTarget.dataset.to);
 	};
 
+	const type = 'list'
+
+
 	return (
-		<View activePanel={activePanel}>
+		<div>
 			<Home />
-		</View>
+			<View activePanel={activePanel}>
+				<Home />
+			</View>
+		</div>
 	);
 }
 

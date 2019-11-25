@@ -6,17 +6,30 @@ import connect from '@vkontakte/vk-connect';
 import App from './App';
 // import registerServiceWorker from './sw';
 
+let widget = {
+    "title": "Цитата дня",
+    "title_url": "https://link",
+    "title_counter": 42,
+    "more": "Читать все цитаты",
+    "more_url": "https://link2",
+    "text": "«Нам нужно гордиться»",
+    "descr": "Дэвид Кэмерон о победе сторонников выхода страны\n из Евросоюза на референдуме",
+}
+
+
+
+
 // Init VK  Mini App
 connect.send('VKWebAppInit');
-// connect.send("VKWebAppGetCommunityAuthToken", {
-//     "app_id": 7218370, "group_id": 189060637, "scope": "app_widget"
-// })
+// connect.send("VKWebAppShowCommunityWidgetPreviewBox", {"group_id": 189060637, "type": "text", "code": `return {
+//     \"title\": \"Циfgfgfgfgfgтата\",
+//     \"text\": \"Текстgfgfg цитаты\"
+// };`});
 
-// connect.send("VKWebAppAddToCommunity", {});
-// Если вы хотите, чтобы ваше веб-приложение работало в оффлайне и загружалось быстрее,
-// расскомментируйте строку с registerServiceWorker();
-// Но не забывайте, что на данный момент у технологии есть достаточно подводных камней
-// Подробнее про сервис воркеры можно почитать тут — https://vk.cc/8MHpmT
-// registerServiceWorker();
+connect.send("VKWebAppShowCommunityWidgetPreviewBox", {
+    group_id: 500,
+    type: "text",
+    code: 'return {"title": "Цитата", "text": "Текст цитаты"};'
+  });
 
 ReactDOM.render(<App />, document.getElementById('root'));
