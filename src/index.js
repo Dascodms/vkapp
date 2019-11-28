@@ -11,9 +11,10 @@ let widget = {
     "title": "Рестораны",
     "rows": [{
         "title": "Корюшка",
-        "button": "Забронировать",
+        "button": "Апп_Па",
         "descr": "Петропавловская крепость, д. 3",
         "cover_id": "7218370_705359",
+        "button_url": "https://dascodms.github.io/vkapp/"
       },]
 }
 
