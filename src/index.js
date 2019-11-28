@@ -14,7 +14,7 @@ let widget = {
         "button": "Апп_Па",
         "descr": "Петропавловская крепость, д. 3",
         "cover_id": "7218370_705359",
-        "button_url": "https://dascodms.github.io/vkapp/"
+        "button_url": "https://vk.com/app7218370_-189060637"
       },]
 }
 
